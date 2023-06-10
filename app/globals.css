@@ -2,9 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
-body,
-:root {
+
+body {
   height: 100%;
-  background-color: black;
+  color: #fff;
+  background: rgba(14, 17, 21, 1);
+}
+
+.textFill--transparent {
+  -webkit-text-fill-color: transparent;
+}
+
+.header {
+  min-height: calc(100vh - 50px);
+}
+
+.header-background {
+  clip-path: url(#my-clip-path);
+  filter: blur(135px); 
 }

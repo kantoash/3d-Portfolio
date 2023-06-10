@@ -5,12 +5,10 @@ import React from "react";
 import { Canvas } from "@react-three/fiber";
 import { Center, Text3D } from "@react-three/drei";
 
-const Header = () => {
+
+const HeaderNav = () => {
   return (
-    <header className=" p-8">
-     
-      {/* nav */}
-      <div className="flex items-center justify-between gap-x-5 text-white">
+    <div className="flex items-center justify-between gap-x-5 text-white">
         <div className="w-[100px] h-[60px]">
           <Canvas camera={{ position: [0, 0, 3] }} shadows >
             <ambientLight intensity={0.7} />
@@ -42,13 +40,7 @@ const Header = () => {
         </button>
       </div>
       </div>
+  )
+}
 
-      {/* center */}
-      <div></div>
-      {/* cta */}
-      <div></div>
-    </header>
-  );
-};
-
-export default Header;
+export default HeaderNav
